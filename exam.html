@@ -1,0 +1,41 @@
+<html>
+<body>
+<script>  
+function validateform(){  
+
+    location.replace("main.html") 
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+    }else if(!number1.value.length){
+        showAlert('enter your phone number');
+    } else if(!Number(number1.value) || number1.value.length < 10){
+        showAlert('invalid number, please enter valid one');
+    } else if(!tac1.checked){
+        showAlert('you must agree to our terms and conditions');
+    } else if(!email1.value.length){
+        showAlert('enter your email');
+    }else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+  
+}  
+</script>  
+<body>  
+<form>  
+Name: <input type="text" name="name" required><br/>  
+Number: <input type="text" autocomplete="off" id="number" placeholder="number"><br>
+Email: <input type="email" autocomplete="off" id="email" placeholder="email"><br>
+Password: <input type="password" name="password"><br/>
+<input type="checkbox" checked class="checkbox" id="terms-and-cond">
+<label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label><br>
+<input type="checkbox" class="checkbox" id="notification">
+<label for="notification">recieve upcoming offers and events mails</a></label><br>
+<button><a href="main.html">register</a></button>  
+</form>  
+</body>
+</html>

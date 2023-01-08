@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+
+    <style>
+        video{
+            max-width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+            font-size: 30px;
+        }
+        body{
+            background-color: rgb(8, 8, 33);
+            text-align: center;
+        }
+        p{
+            color: aliceblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body
+            {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            font-weight: 16px;
+            font-family: 'Poppins' sans-serif;
+        }
+            h1{
+                align-items: center;
+            }
+            .content{
+                text-align: center;
+            
+            }
+            .content h1 {
+                font-size: 40px;
+                color: rgb(180, 180, 226);
+                font-weight: 100px;
+                padding: 14px 70px;
+                
+            }
+            .content p{
+                color: rgb(180, 180, 226);
+            }
+            .content a{
+                text-decoration: none ;
+            }
+            
+            .back-video{
+                position: absolute;
+                right: 0;
+                left: 0;
+                z-index: -1;
+            }
+            @media(min-aspect-ratio: 16/9){
+                .back-video{
+                width: 100%;
+                height: auto;
+                }
+            }
+    </style>
+</head>
+<body>
+<div>
+    <video autoplay loop muted class="back-video">
+        <source src="videos\Galaxy Motion Background Video [HD] _ FREE.mp4"  type="video/mp4">
+    </video>
+
+    <div class="content" style="text-decoration: none;">
+        <p id="paragraph"></p>
+        <a href="main.html"><h1>Login Successful Go to Home page</h1></a>  
+        <img height="350px" width="350px" src="img\2.jfif" />
+        <img height="350px" width="350px" src="img\4.jfif" />
+    </div>
+
+</div>
+    
+
+
+
+   <!--  <script src="scripts\result.js"></script>  -->
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Montserrat&display=swap" rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css\retrive.css">
+  <title>Images from Space</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="faviconN.ico">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="nav-li">
+        <li>
+            <div class="dropdown">
+            <button class="btn" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="index.html">Home</a>
+              <a href="rover.html">Images of mars</a>
+              <a href="life.html">Astronomy picture of the day</a>
+              <a href="retrive.html">Images from Space</a>
+              <a href="weather.html">Check Mars Weather</a>
+              <a href="#contactus">ContactUs</a>
+            </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+  <header class="header">
+    <h1 class="heading-primary">Images from Space</h1>
+    <h3 class="heading-secondary">Data retrieved from NASA's APOD API</h3>
+  </header>
+  <div class="container">
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-10"><img src="placeholder.png" class="img" id="img--10" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-9"><img src="placeholder.png" class="img" id="img--9" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-8"><img src="placeholder.png" class="img" id="img--8" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-7"><img src="placeholder.png" class="img" id="img--7" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-6"><img src="placeholder.png" class="img" id="img--6" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-5"><img src="placeholder.png" class="img" id="img--5" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-4"><img src="placeholder.png" class="img" id="img--4" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-3"><img src="placeholder.png" class="img" id="img--3" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-2"><img src="placeholder.png" class="img" id="img--2" alt="image from NASA API"></a></div>
+    <div class="item"><a href="#popup-img" class="popup-link" id="popup-link-1"><img src="placeholder.png" class="img" id="img--1" alt="image from NASA API"></a></div>
+  </div>
+  <footer>
+    <p id="copyright"></p>
+    <script>
+      /*document.getElementById("copyright").innerHTML = "© Copyright Freeda Moore " + new Date().getFullYear();*/
+    </script>
+  </footer>
+
+  <!-- popup -->
+  <div class="popup" id="popup-img">
+    <div class="popup-content">
+      <div class="popup-item">
+        <img src="" id="pop-img" alt="image from NASA API">
+        <iframe id="pop-vid" width="100%" height="100%" src=""></iframe>
+        <p id="img-copyright"></p>
+      </div>
+      <div class="popup-item popup-text">
+      <h3 id="title">Title</h3>
+      <h4 id="date">Date</h4>
+      <p id="explanation">Explanation</p>
+      <a href="#" class="popup-close">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts\retrive.js"></script>
+<script src="scripts\script.js"></script>
+</body>
+
+</html>
